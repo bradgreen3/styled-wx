@@ -25,4 +25,3 @@ yarn-error.log*
 secrets.js
 package-lock.json
 *.idea
-public/
