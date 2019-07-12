@@ -1,24 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledHeader = styled.div`
+const HeaderWrapper = styled.div`
     display: flex;
-    min-height: 1vh;
     background: #556080;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
 `;
 
-const StyledText = styled.p`
+const HeaderText = styled.p`
     color: #8697cb;
-    font-size: 30px;
+    font-size: 3rem;
     font-style: bold;
 `;
 
 const Header = () => {
     return (
-        <StyledHeader>
-            <StyledText>StyledWx</StyledText>
-        </StyledHeader>
+        <HeaderWrapper>
+            <HeaderText>StyledWx</HeaderText>
+        </HeaderWrapper>
     )
 };
 

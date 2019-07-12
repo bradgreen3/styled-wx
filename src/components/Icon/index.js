@@ -9,34 +9,35 @@ import Wind from "./Wind";
 import Sleet from "./Sleet";
 import Snow from "./Snow";
 import Rain from "./Rain";
+import Lightning from "./Lightning";
 
 const Icon = ({name}) => {
 
-    console.log(name)
-
-    switch(name) {
+    switch (name) {
         case "clear-day":
-            return <ClearDay />;
+            return <ClearDay/>;
         case "clear-night":
-            return <ClearNight />;
+            return <ClearNight/>;
         case "rain":
-            return <Rain />;
+            return <Rain/>;
         case "snow":
-            return <Snow />;
+            return <Snow/>;
         case "sleet":
-            return <Sleet />;
+            return <Sleet/>;
         case "wind":
-            return <Wind />;
+            return <Wind/>;
         case "fog":
-            return <Fog />;
+            return <Fog/>;
         case "cloudy":
-            return <Cloudy />;
+            return <Cloudy/>;
         case "partly-cloudy-day":
-            return <PartlyCloudyDay />;
+            return <PartlyCloudyDay/>;
         case "partly-cloudy-night":
-            return <PartlyCloudyNight />;
+            return <PartlyCloudyNight/>;
+        case "lightning":
+            return <Lightning/>;
         default:
-            return <div />;
+            return <div/>;
     }
 };
 
